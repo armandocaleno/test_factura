@@ -47,7 +47,7 @@
             <div class="flex-1 flex flex-col overflow-hidden">
                 @include('header')
 
-                <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
+                <main class="flex-1 overflow-x-hidden overflow-y-auto ">
                     <div class="mx-auto px-6 pb-6"> {{-- container --}}
                          <!-- Page Heading -->
                         @if (isset($header))
@@ -59,7 +59,16 @@
                         @endif
 
                         <!-- Page Content -->
-                        @yield('body')
+                        <div class="py-12">
+                            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                            
+                                    @yield('body')
+                            
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </main>
             </div>

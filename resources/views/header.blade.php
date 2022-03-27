@@ -1,4 +1,4 @@
-<header class="flex items-center justify-between px-6 py-4 bg-white border-b-2 border-gray-600 shadow-md">
+<header class="flex items-center justify-between px-6 py-4 bg-gray-50 border-b-2 border-dark shadow-md">
     <div class="flex items-center">
         {{-- lg:hidden --}}
         <button @click="sidebarOpen = true" class="text-gray-500 focus:outline-none hidden">
@@ -8,7 +8,7 @@
         </button>                   
     </div>    
 
-    <div class="hidden lg:flex items-center space-x-4 font-semibold text-lg text-gray-700">
+    <div class="hidden lg:flex items-center space-x-4 font-semibold text-lg text-dark">
         <p>Sistema de facturación</p>
 
         {{-- <img src="{{ asset('/images/favicon/containers.png') }}" width="40" height="40" alt="logo_title">                   --}}
@@ -17,8 +17,8 @@
     <div class="flex items-center">      
         <div x-data="{ dropdownOpen: false }"  class="relative">
             <div class="flex items-center space-x-2">
-                <div class=" text-right">
-                    <div class="text-gray-700">{{ auth()->user()->name }}</div>                    
+                <div class="hidden sm:block text-right">
+                    <div class="text-dark">{{ auth()->user()->name }}</div>                    
                 </div>
                 <button @click="dropdownOpen = ! dropdownOpen" class="relative block w-8 h-8 overflow-hidden rounded-full shadow focus:outline-none">                   
                     <img class="object-cover w-full h-full" src="{{ auth()->user()->profile_photo_url }}" alt="{{ auth()->user()->name }}">
@@ -28,13 +28,13 @@
             <div x-cloak x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 z-10 w-full h-full"></div>
 
             <template x-if="true">
-                <div x-show="dropdownOpen" class="absolute right-0 z-10 w-48 mt-2 overflow-hidden bg-white rounded-md shadow-xl">
-                    <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-700 hover:text-white">Perfil</a>
+                <div x-show="dropdownOpen" class="absolute right-0 z-10 w-48 mt-2 overflow-hidden bg-gray-50 rounded-md shadow-xl">
+                    <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-sm text-dark hover:bg-dark hover:text-gray-50">Perfil</a>
                    
                     <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf                   
-                        <a href="{{ route('logout') }}"  onclick="event.preventDefault(); this.closest('form').submit();" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-700 hover:text-white">Cerrar sesión</a>
+                        <a href="{{ route('logout') }}"  onclick="event.preventDefault(); this.closest('form').submit();" class="block px-4 py-2 text-sm text-dark hover:bg-dark hover:text-gray-50">Cerrar sesión</a>
                     </form>
                 </div>
             </template>

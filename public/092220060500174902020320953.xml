@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+  <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>ARMANDO SILFREDO CALEÑO ASANZA</razonSocial>
+    <ruc>0922200605001</ruc>
+    <claveAcceso>1503202201092220060500110010020000000131234567819</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>002</ptoEmi>
+    <secuencial>000000013</secuencial>
+    <dirMatriz>KM 7.5 VIA A DAULE COOP. GALLEGOS LARA MZ 1122 S. 31</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>15/03/2022</fechaEmision>
+    <obligadoContabilidad>NO</obligadoContabilidad>
+    <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
+    <razonSocialComprador>JLG &amp; CO. CONSULTORES S.A.</razonSocialComprador>
+    <identificacionComprador>0992808859001</identificacionComprador>
+    <direccionComprador>ED. OLIVOS TOWER PISO 4 OF. 405</direccionComprador>
+    <totalSinImpuestos>160.00</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>0</codigoPorcentaje>
+        <baseImponible>160.00</baseImponible>
+        <tarifa>0</tarifa>
+        <valor>0.00</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>160.00</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>20</formaPago>
+        <total>160</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>006</codigoPrincipal>
+      <codigoAuxiliar>B004</codigoAuxiliar>
+      <descripcion>SSD 480GB A400 SATA III 2.5INC</descripcion>
+      <cantidad>1</cantidad>
+      <precioUnitario>80</precioUnitario>
+      <descuento>0</descuento>
+      <precioTotalSinImpuesto>80.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>0</codigoPorcentaje>
+          <tarifa>0</tarifa>
+          <baseImponible>80</baseImponible>
+          <valor>0.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>008</codigoPrincipal>
+      <codigoAuxiliar>B005</codigoAuxiliar>
+      <descripcion>PALMREST LAPTOP HP</descripcion>
+      <cantidad>1</cantidad>
+      <precioUnitario>80</precioUnitario>
+      <descuento>0</descuento>
+      <precioTotalSinImpuesto>80.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>0</codigoPorcentaje>
+          <tarifa>0</tarifa>
+          <baseImponible>80</baseImponible>
+          <valor>0.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="Email">gaby.lopez@jlgconsultores.net</campoAdicional>
+    <campoAdicional nombre="Contribuyente Negocios Populares">Regimen RIMPE</campoAdicional>
+  </infoAdicional>
+</factura>

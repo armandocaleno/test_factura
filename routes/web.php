@@ -16,12 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
-// Route::get('/dashboard', [HomeController::class, 'home'])->name('home');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard',  [HomeController::class, 'home'])->name('dashboard');
 
-Route::get('/factura', [FacturaController::class, 'factura'])->name('factura');
-Route::post('/factura/enviar', [FacturaController::class, 'enviar'])->name('factura.enviar');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard',  [HomeController::class, 'home'])->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    Route::get('/dashboard', [HomeController::class, 'home'])->name('dashboard');
+    Route::get('/factura', [FacturaController::class, 'factura'])->name('factura');
+    Route::post('/factura/enviar', [FacturaController::class, 'enviar'])->name('factura.enviar');
+    Route::post('/factura/crear/xml', [FacturaController::class, 'crear_xml'])->name('factura.crear.xml');
+});
