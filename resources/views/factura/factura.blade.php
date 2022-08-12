@@ -12,7 +12,7 @@
                         <button type="submit">Enviar</button>
                     </form>   
                     
-                    
+                    {{-- Crear el xml de la factura --}}
                     <form action="{{ route('factura.crear.xml') }}" enctype="multipart/form-data" method="post">
                         @csrf                                                
 
