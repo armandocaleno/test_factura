@@ -4,6 +4,7 @@
             <div class="max-w-7xl mx-auto sm:px-4 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     
+                    {{-- Envio a SRI --}}
                     <form action="{{ route('factura.enviar') }}" enctype="multipart/form-data" method="post">
                         @csrf
                         
