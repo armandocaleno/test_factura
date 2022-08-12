@@ -14,7 +14,7 @@
         {{-- <img src="{{ asset('/images/favicon/containers.png') }}" width="40" height="40" alt="logo_title">                   --}}
     </div>
     
-    <div class="flex items-center">      
+    <div class="flex items-center">
         <div x-data="{ dropdownOpen: false }"  class="relative">
             <div class="flex items-center space-x-2">
                 <div class="hidden sm:block text-right">

@@ -123,8 +123,8 @@
     //INFORMACIÓN ADICIONAL
     $infoAdicional = $xml->createElement('infoAdicional');
     $infoAdicional = $Factura->appendChild($infoAdicional);
-$descripcion = '';
-$i = 0;
+	$descripcion = '';
+	$i = 0;
 
 // EMULANDO LA CONSULTA A LA BASE DE DATOS DE UN SELECT
 $lineas = array(
